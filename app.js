@@ -26,6 +26,7 @@ Ext.application({
 
         controllers: [
             // TODO: add controllers here
+            'DL.controller.Main'
         ],
 
         stores: [

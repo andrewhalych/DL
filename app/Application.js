@@ -10,6 +10,7 @@ Ext.define('DL.Application', {
 
     controllers: [
         // TODO: add controllers here
+        'DL.controller.Main'
     ],
 
     stores: [

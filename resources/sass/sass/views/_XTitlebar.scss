@@ -1,3 +1,6 @@
+@import "compass/css3/box";
+
+
 #xtitlebar{
   background: #363839; /* Old browsers */
   background: -moz-linear-gradient(left,  #363839 0%, #7c8084 9%, #e8e8e8 18%, #7c8084 29%, #363839 99%); /* FF3.6+ */
@@ -14,18 +17,24 @@
     .x-box-target{
       height: 100%;
       width: 100% !important;
+      @include display-box;
+      @include box-orient(horizontal);
       .logo-container{
+        @include box-flex(2);
         //left: 16em!important;
         top:0px!important;
         height: 100%;
-        //width: 9%;
-        background-position: 62%;
+        left: 10%!important;
+        //width:10em;
+        //background-position: 100%;
         background-image: url('../../images/logo.png');
         background-repeat: no-repeat;
         background-size: contain;
       }
       .title{
+        @include box-flex(3);
         color: #fff;
+        left:25% !important;
         font-size: 2.5em;
         font-family: -webkit-pictograph;
         height: 100%;
@@ -33,19 +42,43 @@
       }
 
       .login-btn{
+        @include box-flex(1);
         top: auto !important;
         bottom: 0;
-        font-size: 1.2em;
-        color: #ffffff;
-        :hover{
-          background: #CC3300;
-          font-size: 1.3em;
-          border: none;
+        left:auto !important;
+        right: 100px !important;
+        width: 8em;
+        padding: .4em;
+        font-weight: 700;
+        background-color: #000000;
+        border-radius: 0px;
+        &.x-btn-over{
+          //background-image: none;
+        }
+        .x-btn-inner{
+          color: #ffffff;
+          font-size: 1.1em;
+          font-weight: 700;
         }
       }
       .singup-btn{
+        @include box-flex(1);
         top: auto !important;
         bottom: 0;
+        left: auto !important;
+        right: 10px !important;
+        width: 8em;
+        padding: .4em;
+        background-color: #000000;
+        border-radius: 0px;
+        &.x-btn-over{
+          //background-image: none;
+        }
+        .x-btn-inner{
+          color: #ffffff;
+          font-size: 1.1em;
+          font-weight: 700;
+        }
       }
     }
   }

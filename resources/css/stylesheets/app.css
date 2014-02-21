@@ -1,4 +1,4 @@
-/* line 1, ../../sass/sass/views/_XTitlebar.scss */
+/* line 4, ../../sass/sass/views/_XTitlebar.scss */
 #xtitlebar {
   background: #363839;
   /* Old browsers */
@@ -18,54 +18,96 @@
   /* IE6-9 */
   height: 25% !important;
 }
-/* line 11, ../../sass/sass/views/_XTitlebar.scss */
+/* line 14, ../../sass/sass/views/_XTitlebar.scss */
 #xtitlebar .x-box-inner {
   height: 100% !important;
   width: 100% !important;
 }
-/* line 14, ../../sass/sass/views/_XTitlebar.scss */
+/* line 17, ../../sass/sass/views/_XTitlebar.scss */
 #xtitlebar .x-box-inner .x-box-target {
   height: 100%;
   width: 100% !important;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-box;
+  display: box;
+  -webkit-box-orient: horizontal;
+  -moz-box-orient: horizontal;
+  -ms-box-orient: horizontal;
+  box-orient: horizontal;
 }
-/* line 17, ../../sass/sass/views/_XTitlebar.scss */
+/* line 22, ../../sass/sass/views/_XTitlebar.scss */
 #xtitlebar .x-box-inner .x-box-target .logo-container {
+  -webkit-box-flex: 2;
+  -moz-box-flex: 2;
+  -ms-box-flex: 2;
+  box-flex: 2;
   top: 0px !important;
   height: 100%;
-  background-position: 62%;
+  left: 10% !important;
   background-image: url("../../images/logo.png");
   background-repeat: no-repeat;
   background-size: contain;
 }
-/* line 27, ../../sass/sass/views/_XTitlebar.scss */
+/* line 34, ../../sass/sass/views/_XTitlebar.scss */
 #xtitlebar .x-box-inner .x-box-target .title {
+  -webkit-box-flex: 3;
+  -moz-box-flex: 3;
+  -ms-box-flex: 3;
+  box-flex: 3;
   color: #fff;
+  left: 25% !important;
   font-size: 2.5em;
   font-family: -webkit-pictograph;
   height: 100%;
   padding: 1em 0;
 }
-/* line 35, ../../sass/sass/views/_XTitlebar.scss */
+/* line 44, ../../sass/sass/views/_XTitlebar.scss */
 #xtitlebar .x-box-inner .x-box-target .login-btn {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -ms-box-flex: 1;
+  box-flex: 1;
   top: auto !important;
   bottom: 0;
-  font-size: 1.2em;
+  left: auto !important;
+  right: 100px !important;
+  width: 8em;
+  padding: .4em;
+  font-weight: 700;
+  background-color: #000000;
+  border-radius: 0px;
+}
+/* line 58, ../../sass/sass/views/_XTitlebar.scss */
+#xtitlebar .x-box-inner .x-box-target .login-btn .x-btn-inner {
   color: #ffffff;
+  font-size: 1.1em;
+  font-weight: 700;
 }
-/* line 40, ../../sass/sass/views/_XTitlebar.scss */
-#xtitlebar .x-box-inner .x-box-target .login-btn :hover {
-  background: #CC3300;
-  font-size: 1.3em;
-  border: none;
-}
-/* line 46, ../../sass/sass/views/_XTitlebar.scss */
+/* line 64, ../../sass/sass/views/_XTitlebar.scss */
 #xtitlebar .x-box-inner .x-box-target .singup-btn {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -ms-box-flex: 1;
+  box-flex: 1;
   top: auto !important;
   bottom: 0;
+  left: auto !important;
+  right: 10px !important;
+  width: 8em;
+  padding: .4em;
+  background-color: #000000;
+  border-radius: 0px;
+}
+/* line 77, ../../sass/sass/views/_XTitlebar.scss */
+#xtitlebar .x-box-inner .x-box-target .singup-btn .x-btn-inner {
+  color: #ffffff;
+  font-size: 1.1em;
+  font-weight: 700;
 }
 
 /* line 2, ../../sass/sass/views/DL.scss */
-.x-btn-default-toolbar-small-over {
+.x-btn.x-btn-over {
   background-color: #ffb94b;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#c94700), to(#b84100));
   background-image: -webkit-linear-gradient(top, #c94700, #b84100);
@@ -73,30 +115,52 @@
   background-image: -ms-linear-gradient(top, #c94700, #b84100);
   background-image: -o-linear-gradient(top, #c94700, #b84100);
   background-image: linear-gradient(top, #c94700, #b84100);
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
+  border: none;
+  border-radius: 0px;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.7);
   -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5), 0 17px 2px rgba(255, 255, 255, 0.2) inset, 0 5px 5px rgba(255, 255, 255, 0.2) inset;
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5), 0 17px 2px rgba(255, 255, 255, 0.2) inset, 0 5px 5px rgba(255, 255, 255, 0.2) inset;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5), 0 17px 2px rgba(255, 255, 255, 0.2) inset, 0 5px 5px rgba(255, 255, 255, 0.2) inset;
   display: block;
-  border: none;
   position: relative;
   float: none;
-  height: 35px;
-  padding: 0;
-  margin: 0 auto 20px;
-  width: 120px;
   cursor: pointer;
-  font-size: 18px;
   color: #FFF;
   text-transform: capitalize;
 }
-
-/* line 516, ../../../ext-theme-neutral/sass/src/button/Button.scss */
-/* line 32, ../../sass/sass/views/DL.scss */
-.x-btn-default-toolbar-small-focus {
+/* line 24, ../../sass/sass/views/DL.scss */
+.x-btn.x-btn-focus {
+  background: #b84100;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #b84100 0%, #c94700 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #b84100), color-stop(100%, #c94700));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #b84100 0%, #c94700 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #b84100 0%, #c94700 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #b84100 0%, #c94700 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #b84100 0%, #c94700 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#b84100', endColorstr='#c94700',GradientType=0 );
+  /* IE6-9 */
+  border: none;
+  border-radius: 0px;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.7);
+  -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5), 0 17px 2px rgba(255, 255, 255, 0.2) inset, 0 5px 5px rgba(255, 255, 255, 0.2) inset;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5), 0 17px 2px rgba(255, 255, 255, 0.2) inset, 0 5px 5px rgba(255, 255, 255, 0.2) inset;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5), 0 17px 2px rgba(255, 255, 255, 0.2) inset, 0 5px 5px rgba(255, 255, 255, 0.2) inset;
+  display: block;
+  position: relative;
+  float: none;
+  cursor: pointer;
+  color: #FFF;
+  text-transform: capitalize;
+}
+/* line 46, ../../sass/sass/views/DL.scss */
+.x-btn.x-pressed {
   background-color: #ffb94b;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#c94700), to(#b84100));
   background-image: -webkit-linear-gradient(top, #c94700, #b84100);
@@ -104,47 +168,24 @@
   background-image: -ms-linear-gradient(top, #c94700, #b84100);
   background-image: -o-linear-gradient(top, #c94700, #b84100);
   background-image: linear-gradient(top, #c94700, #b84100);
-  -moz-border-radius: 2px;
-  -webkit-border-radius: 2px;
-  border-radius: 2px;
+  border: none;
+  border-radius: 0px;
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.7);
   -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5), 0 17px 2px rgba(255, 255, 255, 0.2) inset, 0 5px 5px rgba(255, 255, 255, 0.2) inset;
   -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5), 0 17px 2px rgba(255, 255, 255, 0.2) inset, 0 5px 5px rgba(255, 255, 255, 0.2) inset;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5), 0 17px 2px rgba(255, 255, 255, 0.2) inset, 0 5px 5px rgba(255, 255, 255, 0.2) inset;
   display: block;
-  border: none;
   position: relative;
   float: none;
-  height: 35px;
-  padding: 0;
-  margin: 0 auto 20px;
-  width: 120px;
   cursor: pointer;
-  font-size: 18px;
   color: #FFF;
   text-transform: capitalize;
 }
 
-/* line 63, ../../sass/sass/views/DL.scss */
-#submit:hover, #submit:focus {
-  background-color: #C94700;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#b84100), to(#c94700));
-  background-image: -webkit-linear-gradient(top, #b84100, #c94700);
-  background-image: -moz-linear-gradient(top, #b84100, #c94700);
-  background-image: -ms-linear-gradient(top, #b84100, #c94700);
-  background-image: -o-linear-gradient(top, #b84100, #c94700);
-  background-image: linear-gradient(top, #b84100, #c94700);
-}
-
-/* line 72, ../../sass/sass/views/DL.scss */
+/* line 69, ../../sass/sass/views/DL.scss */
 #submit:active {
   outline: none;
   -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
   -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
-}
-
-/* line 78, ../../sass/sass/views/DL.scss */
-#submit::-moz-focus-inner {
-  border: none;
 }

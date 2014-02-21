@@ -10,12 +10,14 @@ Ext.define('DL.view.XTitlebar', {
     config: {
         id: 'xtitlebar',
         layout: 'hbox',
+//        resizable: true,
+        rtl:true,
         items:[
             {
                 xtype: 'container',
                 itemId: 'logo-container',
                 cls: 'logo-container',
-                width: 400
+                width: 200
             },
 
             {
@@ -24,18 +26,18 @@ Ext.define('DL.view.XTitlebar', {
                 cls: 'title'
 
             },
+
             {
-                xtype: 'tbspacer',
-                width:100
-            },
-            {
-                text: 'Залогуватися',
-                cls: 'login-btn'
+                text: 'Логін',
+                cls: 'login-btn',
+                itemId: 'login-btn',
+                allowDepress :false
 
             },
             {
                 text:"Реєстрація",
-                cls:'singup-btn'
+                cls:'singup-btn',
+                allowDepress :false
             }
         ]
     }
