@@ -1,0 +1,78 @@
+
+.x-btn-default-toolbar-small-over {
+    background-color: #ffb94b;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#C94700), to(#B84100));
+    background-image: -webkit-linear-gradient(top, #C94700, #B84100);
+    background-image: -moz-linear-gradient(top, #C94700, #B84100);
+    background-image: -ms-linear-gradient(top, #C94700, #B84100);
+    background-image: -o-linear-gradient(top, #C94700, #B84100);
+    background-image: linear-gradient(top, #C94700, #B84100);
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    text-shadow: 0 1px 0 rgba(0, 0, 0,0.7);
+    -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5), 0 17px 2px rgba(255, 255, 255, 0.2) inset, 0 5px 5px rgba(255, 255, 255, 0.2) inset;
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5), 0 17px 2px rgba(255, 255, 255, 0.2) inset, 0 5px 5px rgba(255, 255, 255, 0.2) inset;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5), 0 17px 2px rgba(255, 255, 255, 0.2) inset, 0 5px 5px rgba(255, 255, 255, 0.2) inset;
+    display: block;
+    border: none;
+    position: relative;
+    float: none;
+    height: 35px;
+    padding: 0;
+    margin: 0 auto 20px;
+    width: 120px;
+    cursor: pointer;
+    font-size:18px ;
+    color: #FFF;
+    text-transform:  capitalize;
+  }
+
+  /* line 516, ../../../ext-theme-neutral/sass/src/button/Button.scss */
+  .x-btn-default-toolbar-small-focus {
+    background-color: #ffb94b;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#C94700), to(#B84100));
+    background-image: -webkit-linear-gradient(top, #C94700, #B84100);
+    background-image: -moz-linear-gradient(top, #C94700, #B84100);
+    background-image: -ms-linear-gradient(top, #C94700, #B84100);
+    background-image: -o-linear-gradient(top, #C94700, #B84100);
+    background-image: linear-gradient(top, #C94700, #B84100);
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+    text-shadow: 0 1px 0 rgba(0, 0, 0,0.7);
+    -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5), 0 17px 2px rgba(255, 255, 255, 0.2) inset, 0 5px 5px rgba(255, 255, 255, 0.2) inset;
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5), 0 17px 2px rgba(255, 255, 255, 0.2) inset, 0 5px 5px rgba(255, 255, 255, 0.2) inset;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5), 0 17px 2px rgba(255, 255, 255, 0.2) inset, 0 5px 5px rgba(255, 255, 255, 0.2) inset;
+    display: block;
+    border: none;
+    position: relative;
+    float: none;
+    height: 35px;
+    padding: 0;
+    margin: 0 auto 20px;
+    width: 120px;
+    cursor: pointer;
+    font-size:18px ;
+    color: #FFF;
+    text-transform:  capitalize;
+  }
+
+
+
+#submit:hover,#submit:focus {
+  background-color: #C94700;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#B84100), to(#C94700));
+  background-image: -webkit-linear-gradient(top, #B84100, #C94700);
+  background-image: -moz-linear-gradient(top, #B84100, #C94700);
+  background-image: -ms-linear-gradient(top, #B84100, #C94700);
+  background-image: -o-linear-gradient(top, #B84100, #C94700);
+  background-image: linear-gradient(top, #B84100, #C94700);
+}
+#submit:active {
+  outline: none;
+  -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5) inset;
+}
+#submit::-moz-focus-inner {border: none;}

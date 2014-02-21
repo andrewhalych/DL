@@ -1,0 +1,53 @@
+#xtitlebar{
+  background: #363839; /* Old browsers */
+  background: -moz-linear-gradient(left,  #363839 0%, #7c8084 9%, #e8e8e8 18%, #7c8084 29%, #363839 99%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,#363839), color-stop(9%,#7c8084), color-stop(18%,#e8e8e8), color-stop(29%,#7c8084), color-stop(99%,#363839)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left,  #363839 0%,#7c8084 9%,#e8e8e8 18%,#7c8084 29%,#363839 99%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left,  #363839 0%,#7c8084 9%,#e8e8e8 18%,#7c8084 29%,#363839 99%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left,  #363839 0%,#7c8084 9%,#e8e8e8 18%,#7c8084 29%,#363839 99%); /* IE10+ */
+  background: linear-gradient(to right,  #363839 0%,#7c8084 9%,#e8e8e8 18%,#7c8084 29%,#363839 99%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#363839', endColorstr='#363839',GradientType=1 ); /* IE6-9 */
+  height: 25% !important;
+  .x-box-inner {
+    height: 100% !important;
+    width: 100% !important;
+    .x-box-target{
+      height: 100%;
+      width: 100% !important;
+      .logo-container{
+        //left: 16em!important;
+        top:0px!important;
+        height: 100%;
+        //width: 9%;
+        background-position: 62%;
+        background-image: url('../../images/logo.png');
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+      .title{
+        color: #fff;
+        font-size: 2.5em;
+        font-family: -webkit-pictograph;
+        height: 100%;
+        padding: 1em 0;
+      }
+
+      .login-btn{
+        top: auto !important;
+        bottom: 0;
+        font-size: 1.2em;
+        color: #ffffff;
+        :hover{
+          background: #CC3300;
+          font-size: 1.3em;
+          border: none;
+        }
+      }
+      .singup-btn{
+        top: auto !important;
+        bottom: 0;
+      }
+    }
+  }
+
+}
