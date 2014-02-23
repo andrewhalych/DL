@@ -1,40 +1,44 @@
-/*
- This file is generated and updated by Sencha Cmd. You can edit this file as
- needed for your application, but these edits will have to be merged by
- Sencha Cmd when upgrading.
+/**
+ * Created by Iruna on 23.02.14.
+ */
+/**
+ * Module dependencies.
+ * @author lukasz.sudol <lukasz@devjs.eu>
  */
 
-Ext.Loader.setConfig({
-    disableCaching: false
+var express = require('express');
+var router = require('./application/router');
+var http = require('http');
+var path = require('path');
+var dbPath = 'mongodb://localhost/DL';
 
+// import the data layer
+var mongoose = require('mongoose');
+// import the models
+var models = {
+    User: require('./application/model/user')(mongoose)
+};
+
+var app = express();
+
+// all environments
+app.set('port', process.env.PORT || 3000);
+app.set('views', __dirname + '/views');
+app.set('view engine', 'jade');
+app.use(express.favicon());
+app.use(express.logger('dev'));
+app.use(express.bodyParser());
+app.use(express.methodOverride());
+app.use(app.router);
+app.use(express.static(path.join(__dirname, 'public')));
+
+//db connection
+mongoose.connect(dbPath, function onMongooseError(err) {
+    if (err) throw err;
 });
 
+//router
+router.init(app, models);
 
-Ext.application({
-    name: 'DL',
-
-//    extend: 'DL.Application',
-
-    autoCreateViewport: true,
-
-    requires:{
-
-        views: [
-            'DL.view.XTitlebar'
-            // TODO: add views here
-        ],
-
-        controllers: [
-            // TODO: add controllers here
-            'DL.controller.Main'
-        ],
-
-        stores: [
-            // TODO: add stores here
-        ]
-
-    }
-
-
-
-});
+app.listen(8080);
+console.log('Listening on port 8888');

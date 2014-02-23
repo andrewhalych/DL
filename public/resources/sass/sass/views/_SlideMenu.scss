@@ -1,0 +1,71 @@
+.tl-slidemenu {
+  //@extend .tl-theme-slidemenu;
+
+  top: 2.6em;
+  bottom: 0;
+
+  width: 17.6em;
+
+  .tl-slidemenu-content {
+    border: 4px solid #464646;
+  }
+
+  .tl-vline {
+    width: 2px;
+    background: #595959;
+  }
+
+  .tl-slidemenu-toggle {
+    //background-image: url(../images/slidemenu/btn_bg.png);
+    background-repeat: no-repeat;
+    background-position-x: 1px;
+    background-size: 100% 100%;
+    height: 5.5em;
+    width: 2.3em;
+    opacity: 0.5;
+    margin-left: -2.3em;
+
+    .tl-icon {
+      //background: url(../images/slidemenu/btn_arrow_left.png) no-repeat;
+      background-size: 100% 100%;
+      width: 0.9em;
+      height: 1em;
+    }
+  }
+
+  .tl-slidemenu-toggle.tl-checked {
+    .tl-icon {
+      //background: url(../images/slidemenu/btn_arrow_right.png) no-repeat;
+      background-size: 100% 100%;
+    }
+  }
+
+  .x-list {
+    //@extend .tl-theme-list-withcheckbox;
+
+    .x-list-item, .x-list-item.x-list-item-tpl {
+      font-size: 0.8em;
+      font-weight: bold;
+
+      .x-innerhtml {
+        padding: 0.7em 0.9em;
+      }
+    }
+  }
+
+  .x-scroll-bar-y.active {
+    width: 0px; /*CHANGE: replace width: 6px;*/
+  }
+
+    .x-button-normal {
+    .x-button-label {
+      font-size: 0.9em;
+    }
+  }
+
+  .x-segmentedbutton {
+    .x-button-label {
+      font-size: 1em;
+    }
+  }
+}

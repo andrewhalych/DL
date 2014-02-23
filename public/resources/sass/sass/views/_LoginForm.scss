@@ -1,0 +1,32 @@
+@import "compass/css3/box-shadow";
+.login-panel{
+  top: 14em !important;
+  right: 0px !important;
+  left:  auto !important;
+  height: 22% !important;
+  //padding: 1em !important;
+  .x-panel-body{
+    background: #4B4B4B;
+    border-color: none;
+    border-color: #3B3835;
+
+    .input-form{
+      margin: 1em !important;
+      margin-bottom: 0em !important;
+
+      .x-panel-header{
+        background-color: #050505;
+        background-image: none;
+        border: 1px solid #000;
+        @include box-shadow(none);
+        .x-header-text-container{
+          color: #FD8400;
+          font-size: 1.2em;
+        }
+      }
+      .x-form-item-label{
+        color: #ffffff;
+      }
+    }
+  }
+}
